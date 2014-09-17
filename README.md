@@ -23,4 +23,14 @@ $ python server.py
 
 ## Connect
 
-Open a browser and input the following address: *http://localhost:9999/*
+Open a browser and input the following address: `http://localhost:9999`
+
+## Work with message queue
+
+By using `publish_message` function in `producer.py`, you can send a message to clients.
+
+``` python
+import producer
+producer.publish_message("message", "direct", "My test message!!!", "test")
+```
+
